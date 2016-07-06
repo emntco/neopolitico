@@ -1,0 +1,31 @@
+{
+  "name": "'",
+  "version": "1.0.1",
+  "description": "The Youth Journal for Applied Politics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zayadur/neopolitico.git"
+  },
+  "keywords": [
+    "youth",
+    "journal",
+    "applied",
+    "politics",
+    "neopolitico"
+  ],
+  "author": "Zayadur Khan <zayadur96@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zayadur/neopolitico/issues"
+  },
+  "homepage": "https://github.com/zayadur/neopolitico",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-htmlmin": "^2.0.0"
+  }
+}

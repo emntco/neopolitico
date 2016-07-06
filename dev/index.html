@@ -1,0 +1,630 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="The official website of Neo Politico">
+    <meta name="author" content="Zayadur Khan">
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <title>Neo Politico</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg">
+
+    <div class="wrap bg site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand"><i class="fa fa-book"></i> Neo Politico</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#articles">Articles</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#issues">Issues</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- <div class="cover-container"> -->
+
+                <div class="inner cover">
+                    <p class="cover-text cover-description">Issue of the Season:</p>
+                    <h1 class="cover-text cover-issue">Immigration</h1>
+                    <br />
+                    <a href="issues/2016/june.pdf" class="btn btn-lg btn-default" data-toggle="tooltip" data-placement="bottom" title="Opens PDF file in new window"
+                        target="_blank">Read &amp; Download</a>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        made with <a href="#" data-toggle="modal" data-target="#credits"><i class="fa fa-heart heart-color"></i></a>                        by <a class="mastfoot-link" href="http://www.zayadur.me" target="_blank">zayadur</a>
+                    </div>
+                </div>
+
+                <!-- About modal -->
+                <div class="modal" id="about" tabindex="1" role="dialog" aria-labelledby="aboutNeoPolitico">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="info-issue modal-title" id="aboutNeoPolitico">About Neo Politico</h4>
+                            </div>
+                            <div class="info-description modal-body">
+                                <p class="modal-text text-justify">Neo Politico is a space where any student, regardless of their prior experience, can voice
+                                    their opinions on certain issues. Every opinion matters because everyone matters. We
+                                    only hope that more students across the entire world can join us in increasing political
+                                    engagement and producing a critical consciousness of the world.</p>
+                                <p class="modal-text text-justify">We hope to achieve our goal by creating a monthly journal with a certain topic for each journal
+                                    where pre-college students can voice their opinion through a well-thought out research
+                                    paper. Furthermore, we hope to create a medium to help students express their agency
+                                    and discuss with other students. We believe that students opinions can go a long way
+                                    towards revealing their relation to the world.</p>
+                                <!-- <div class="btn-group">
+                                  <a class="btn btn-default" href="https://www.facebook.com/neopolitico/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                  <a class="btn btn-default" href="mailto:neopoliticoinfo@gmail.com"><i class="fa fa-envelope"></i></a>
+                                </div> -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About modal end -->
+                <!-- Articles modal -->
+                <div class="modal" id="articles" tabindex="2" role="dialog" aria-labelledby="articles">
+                    <div class="modal-dialog modal-fs" role="document">
+                        <div class="modal-content modal-fs-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="info-issue modal-title" id="articles">Articles</h4>
+                                <p class="modal-p">Last updated: March 23, 2016</p>
+                            </div>
+                            <div class="info-description modal-body table-responsive">
+                                <table id="articlesTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Issue</th>
+                                            <th>Topic</th>
+                                            <th>Article</th>
+                                            <th>Author</th>
+                                            <th>Links</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Issue</th>
+                                            <th>Topic</th>
+                                            <th>Article</th>
+                                            <th>Author</th>
+                                            <th>Links</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+
+                                        <!-- 2016 articles -->
+
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Immigration</td>
+                                            <td>Maksoud, Rylan</td>
+                                            <td>Aiding Lebanon with Its Refugee Crisis</td>
+                                            <td>
+                                                <a class="btn btn-default" href="articles/2016/june/aiding_lebanon_with_refugee_crisis.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Immigration</td>
+                                            <td>Richey, Sam</td>
+                                            <td>Solutions to America's Growing Immigration Problem: The Route to Amnesty</td>
+                                            <td>
+                                                <a class="btn btn-default" href="articles/2016/june/solutions_americas_growing_immigration_problem_route_to_amnesty.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Immigration</td>
+                                            <td>Yang, Jason</td>
+                                            <td>Get in Line!</td>
+                                            <td><a class="btn btn-default" href="articles/2016/june/get_in_line.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Spring</td>
+                                            <td>Gun Control</td>
+                                            <td>The Whitewashing of the Second Amendment</td>
+                                            <td>Bajwa, Sabrina</td>
+                                            <td><a class="btn btn-default" href="articles/2016/spring/whitewashing_second_amendment.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spring</td>
+                                            <td>Gun Control</td>
+                                            <td>The Second Amendment: How to Reconcile Gun Control and Strict Constitutionalism</td>
+                                            <td>Duffee, Nicholas</td>
+                                            <td><a class="btn btn-default" href="articles/2016/spring/second_amendment_how_reconcile_gun_control_strict_constitutionalism.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spring</td>
+                                            <td>Gun Control</td>
+                                            <td>Guns Я Us</td>
+                                            <td>Lohrenz, Kylie</td>
+                                            <td><a class="btn btn-default" href="articles/2016/spring/guns_r_us.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spring</td>
+                                            <td>Gun Control</td>
+                                            <td>Yes, “They” Do Want To Take Your Guns: A Brief Review of Modern Attempts at Firearms Prohibition and Confiscation</td>
+                                            <td>Anonymous</td>
+                                            <td><a class="btn btn-default" href="articles/2016/spring/yes_they_do_want_take_your_guns_brief_review_modern_attempts_firearms_prohibition_confiscation.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spring</td>
+                                            <td>Gun Control</td>
+                                            <td>A Radical Stance for a Radical Problem: Resistance to Campus Carry Legislation</td>
+                                            <td>Yang, Jason</td>
+                                            <td><a class="btn btn-default" href="articles/2016/spring/radical_stance_radical_problem_resistance_campus_carry_legislation.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+
+                                        <!-- 2015 articles -->
+
+                                        <tr>
+                                            <td>November &amp; December</td>
+                                            <td>U.S. Elections</td>
+                                            <td>America's "Trump" Card in the Middle East: Foreign Relations and Controlled Interventionism</td>
+                                            <td>Dave, Devavrat</td>
+                                            <td><a class="btn btn-default" href="articles/2015/novdec/america_trump_card_middle_east_foreign_relations_controlled_invterventionism.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>November &amp; December</td>
+                                            <td>U.S. Elections</td>
+                                            <td>The New Race for White House: Cruz vs. Rubio</td>
+                                            <td>Gilchrist, Narelle</td>
+                                            <td><a class="btn btn-default" href="articles/2015/novdec/new_race_white_house_cruz_vs_rubio.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>November &amp; December</td>
+                                            <td>U.S. Elections</td>
+                                            <td>Why We Should Listen to Bernie Sanders</td>
+                                            <td>Maksoud, Rylan</td>
+                                            <td><a class="btn btn-default" href="articles/2015/novdec/why_we_should_listen_bernie_sanders.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>November &amp; December</td>
+                                            <td>U.S. Elections</td>
+                                            <td>Martin O’Malley: The Man for the Middle Class</td>
+                                            <td>Martinez, Monica</td>
+                                            <td><a class="btn btn-default" href="articles/2015/novdec/martin_o_malley_man_middle_class.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>November &amp; December</td>
+                                            <td>U.S. Elections</td>
+                                            <td>Martin O’Malley for President</td>
+                                            <td>Zakharov, Joshua</td>
+                                            <td><a class="btn btn-default" href="articles/2015/novdec/martin_o_malley_president.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>Speed vs. Quality</td>
+                                            <td>Darko, Winfred</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/speed_vs_quality.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>The Job</td>
+                                            <td>Eluto, Samuel</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/job.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>​The Greater of Two Evils</td>
+                                            <td>Gilchrist, Narelle</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/greater_two_evils.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>The Fire Storm</td>
+                                            <td>Khan, Samiur</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/fire_storm.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>A Little Girl's War</td>
+                                            <td>Martinez, Monica</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/little_girl_war.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>United States Armed Forces</td>
+                                            <td>The Role of Military Industrial Complex in US Military Policy</td>
+                                            <td>Zakharov, Joshua</td>
+                                            <td><a class="btn btn-default" href="articles/2015/october/role_military_industrial_complex_us_military_policy.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>Education Reform</td>
+                                            <td>Performance-Based Pedagogy: A Critique of its Effects on Student Subject Formation</td>
+                                            <td>Jiang, Ryan</td>
+                                            <td><a class="btn btn-default" href="articles/2015/september/performance_based_pedagogy_critque_effects_student_subject_formation.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>Education Reform</td>
+                                            <td>I Don't</td>
+                                            <td>Reddy, Arjun</td>
+                                            <td><a class="btn btn-default" href="articles/2015/september/i_dont.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>Education Reform</td>
+                                            <td>A Self-Compromising Pedagogy: The Faults of Prescriptive Solutions in Attempting to “Reform” Education</td>
+                                            <td>Scott, Chandler</td>
+                                            <td><a class="btn btn-default" href="articles/2015/september/self-compromising_pedagogy_faults_presprictive_solutions_attempting_reform_education.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>Education Reform</td>
+                                            <td>Challenging the Modern Technocrat: Choosing an Existential Education</td>
+                                            <td>Xiang, Andrew</td>
+                                            <td><a class="btn btn-default" href="articles/2015/september/challenging_modern_technocrat_choosing_existential_education.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>Education Reform</td>
+                                            <td>Ode To Todai</td>
+                                            <td>Zhang, Yan</td>
+                                            <td><a class="btn btn-default" href="articles/2015/september/ode_todai.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Foreign Relations with the Middle East</td>
+                                            <td>Fashion Police Gone Wrong</td>
+                                            <td>Darko, Winfred</td>
+                                            <td><a class="btn btn-default" href="articles/2015/july/fashion_police_gone_wrong.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Foreign Relations with the Middle East</td>
+                                            <td>When the Eagle Turns the Cheek - US Saudi Relations and the Oil Curse</td>
+                                            <td>Duffee, Nicholas</td>
+                                            <td><a class="btn btn-default" href="articles/2015/july/when_eagle_turns_cheek-us_saudi_relations_oil_curse.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Foreign Relations with the Middle East</td>
+                                            <td>United States Relations with Syria</td>
+                                            <td>Kadaev, Philip</td>
+                                            <td><a class="btn btn-default" href="articles/2015/july/united_states_relations_with_syria.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Foreign Relations with the Middle East</td>
+                                            <td>The Fence</td>
+                                            <td>Qu, Jason</td>
+                                            <td><a class="btn btn-default" href="articles/2015/july/fence.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Foreign Relations with the Middle East</td>
+                                            <td>International Drone Norms - An American Legacy</td>
+                                            <td>Reddy, Arjun</td>
+                                            <td><a class="btn btn-default" href="articles/2015/july/international_drone_norms-an_american_legacy.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Gender Politics</td>
+                                            <td>The History of American Feminism: An Enduring Fight Against a Flawed Society</td>
+                                            <td>Daniel, Morgan</td>
+                                            <td><a class="btn btn-default" href="articles/2015/june/history_american_femenism.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Gender Politics</td>
+                                            <td>Pigtails and Prurience</td>
+                                            <td>Day, Monica</td>
+                                            <td><a class="btn btn-default" href="articles/2015/june/pigtails_prurience.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Gender Politics</td>
+                                            <td>Abortion: Why Republicans are Fighting the Wrong Fight</td>
+                                            <td>Jin, Fangwei</td>
+                                            <td><a class="btn btn-default" href="articles/2015/june/abortion-why_republicans_fighting_wrong_fight.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>Gender Politics</td>
+                                            <td>Relationship Abuse Patterns Among Teens</td>
+                                            <td>Peters, Grace</td>
+                                            <td><a class="btn btn-default" href="articles/2015/june/relationship_abuse_patterns_among_teens.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>An Unjust Administration of Justice</td>
+                                            <td>Darko, Winfred</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/unjust_admiration_justice.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>The Ethics and Economics of Private Prisons</td>
+                                            <td>Duffee, Nicholas</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/ethics_economics_private_prisons.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>Racial Discrimination in Law Enforcement</td>
+                                            <td>Juarez, Reecan</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/racial_discrimination_law_enforcement.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>Effectiveness of Juvenile Justice Programs</td>
+                                            <td>Kadaev, Phillip</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/effectiveness_juvenile_justice_programs.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>Minority Relations with the U.S. Justice System</td>
+                                            <td>Solano, Diana</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/minority_relations_us_justice_system.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>The American Criminal Justice System</td>
+                                            <td>The Effect of the Prison Industrial Complex on Domestic Legislation</td>
+                                            <td>Zakharov, Joshua</td>
+                                            <td><a class="btn btn-default" href="articles/2015/may/effect_prison_industrial_complex_domestic_legislation.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>Climate Change</td>
+                                            <td>The Necessity of Ecological Management to Sustainably Mitigate Climate Change</td>
+                                            <td>Duffee, Nicholas</td>
+                                            <td><a class="btn btn-default" href="articles/2015/april/necessity_ecological_management_sustainably_mitigate_climate_change.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>Climate Change</td>
+                                            <td>Causes and Controversies Surrounding Global Climate Change</td>
+                                            <td>Kadaev, Phillip</td>
+                                            <td><a class="btn btn-default" href="articles/2015/april/causes_controversies_sorrounding_global_climate_change.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>Climate Change</td>
+                                            <td>The "Human" and Climate Change</td>
+                                            <td>Khan, Samiur</td>
+                                            <td><a class="btn btn-default" href="articles/2015/april/human_climate_change.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>Climate Change</td>
+                                            <td>Environmental Injustice: An Analysis of Low-income Communities Struggles with the Changing Climate</td>
+                                            <td>Reddy, Arjun</td>
+                                            <td><a class="btn btn-default" href="articles/2015/april/environmental_injustice-analysis_low_income_communities_their_struggles_changing_climate.docx"><i class="fa fa-file-word-o"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article modal end -->
+                <!-- Issues modal -->
+                <div class="modal" id="issues" tabindex="3" role="dialog" aria-labelledby="issues">
+                    <div class="modal-dialog modal-fs" role="document">
+                        <div class="modal-content modal-fs-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="info-issue modal-title" id="issues">Issues</h4>
+                            </div>
+                            <div class="info-description modal-body">
+                                <div class="row">
+                                    <!-- <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                      <center>
+                                        <p class="lead">Spring</p>
+                                        <p>Gun Control</p>
+                                      </center>
+                                      <a class="thumbnail" href="issues/2016/spring.pdf" target="_blank">
+                                        <img class="img-responsive" src="assets/img/thumbnails/2016/spring.png" alt="Spring | Gun Control">
+                                      </a>
+                            </div> -->
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="2016issues">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#2016collapse" aria-expanded="true" aria-controls="2016collapse">
+                                                        2016
+                                                    </a>
+                                        </h4>
+                                    </div>
+                                    <div id="2016collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2016issues">
+                                        <div class="panel-body">
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">June</p>
+                                                    <p>Immigration</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2016/june.pdf" target="_blank">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2016/june.png" alt="June | Immigration">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">Spring</p>
+                                                    <p>Gun Control</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2016/spring.pdf" target="_blank">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2016/spring.png" alt="Spring | Gun Control">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="2015issues">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#2015collapse" aria-expanded="false"
+                                                aria-controls="2015collapse">
+                                                        2015
+                                                    </a>
+                                        </h4>
+                                    </div>
+                                    <div id="2015collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2015collapse">
+                                        <div class="panel-body">
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">November &amp; December</p>
+                                                    <p>U.S. Elections</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/novdec.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/novdec.jpg" alt="November & December">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">October</p>
+                                                    <p>United States Armed Forces</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/october.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/october.jpg" alt="October">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">September</p>
+                                                    <p>Education Reform</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/september.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/september.jpg" alt="September">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">July</p>
+                                                    <p>Foreign Relations with the Middle East</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/july.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/july.jpg" alt="July">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">June</p>
+                                                    <p>Gender Politics</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/june.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/june.jpg" alt="June">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">May</p>
+                                                    <p>The American Criminal Justice System</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/may.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/may.jpg" alt="May">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-xs-6 thumb">
+                                                <center>
+                                                    <p class="lead">April</p>
+                                                    <p>Climate Change</p>
+                                                </center>
+                                                <a class="thumbnail" href="issues/2015/april.pdf">
+                                                    <img class="img-responsive" src="assets/img/thumbnails/2015/april.jpg" alt="April">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Issues modal end -->
+        <!-- Credits modal -->
+        <div class="modal" id="credits" tabindex="4" role="dialog" aria-labelledby="acknowledgements">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="info-issue modal-title" id="acknowledgements">Credits</h4>
+                    </div>
+                    <div class="info-description modal-body">
+                        <p class="lead">We would like to thank...</p>
+                        <p><a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a class="modal-link" href="https://twitter.com/fat"
+                                target="_blank">@fat</a> for creating the wonderful <a class="modal-link" href="https://getbootstrap.com"
+                                target="_blank">Bootstrap</a> framework</p>
+                        <p><a href="https://cloud.google.com/" target="_blank">Google Cloud Platform</a> for their amazing services</p>
+                        <p><a href="https://www.datatables.net/" target="_blank">DataTables</a> for their magnificent table
+                            plugin</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Credits modal end -->
+    </div>
+    </div>
+    </div>
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#articlesTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

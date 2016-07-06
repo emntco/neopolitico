@@ -24,7 +24,7 @@ Due to the minimal purpose of the website, it was decided to keep the design of 
 
 ### General fixes
 
-``error.html`` needs to be updated
+Improve ``error.html``
 
 ### Responsive design
 Although Bootstrap took care of the basic responsive design elements, there are still responsive design techniques that can be used to lessen the impact the site has on users.
