@@ -1,6 +1,6 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-htmlmin');
+var gulp = require('gulp'),
+    cleanCSS = require('gulp-clean-css'),
+    htmlmin = require('gulp-htmlmin');
 
 gulp.task('default', function() {
   // place code for your default task here
