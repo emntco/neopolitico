@@ -31,7 +31,4 @@ Although Bootstrap took care of the basic responsive design elements, there are 
 
 #### Minification
 
-``index.css`` can be minified through a ``gulp`` workflow, which will be implemented next.
-
-#### Images
 Currently, all image files are rasters with Bootstrap's ``img-responsive`` class. The next steps are to implement code to replace or resize image files based on resolution, and implement more vector graphics.
