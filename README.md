@@ -15,7 +15,7 @@ The primary purpose of the website is to display and distribute articles and jou
 
 The [Bootstrap](http://getbootstrap.com/) framework was used to allow for quick and easy development of the site, while implementing responsive design automatically.
 
-Keeping in mind that there are multiple articles and journals to be displayed, a way to organize all the information was of great importance. The [DataTables](https://datatables.net/) jQury plugin was the best solution to organize all the articles, while keeping logic off of the site.
+Keeping in mind that there are multiple articles and journals to be displayed, a way to organize all the information was of great importance. The [DataTables](https://datatables.net/) jQuery plugin was the best solution to organize all the articles, while keeping logic off of the site.
 
 ### Design
 Due to the minimal purpose of the website, it was decided to keep the design of the website minimal as well. Following the conventional block-method, the website would feature a navigation menu, a small body, and a footer, emulating a landing page. Hidden behind the landing page, there would be JavaScript modals displaying the collections of articles and journals, as well as smaller modals to display meta information. Essentially, the whole website rests on one HTML file: ``index.html``.
