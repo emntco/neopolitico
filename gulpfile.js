@@ -17,4 +17,3 @@ gulp.task('minify-html', function() {
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'))
 });
-
